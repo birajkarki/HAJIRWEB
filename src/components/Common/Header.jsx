@@ -24,7 +24,7 @@ const Header = () => {
         <h1 className="text-2xl font-semibold">Hajir Attendance System</h1>
         <div className="flex items-center space-x-4">
           {/* Add user information (name, profile picture) */}
-          <span>Welcome, John Doe</span>
+          <span>Welcome, Biraj Karki</span>
           <img
             src="path/to/profile-picture.jpg"
             alt="Profile"
