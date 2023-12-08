@@ -1,26 +1,30 @@
-import { Link } from "react-router-dom";
-
 const LoginHeader = () => {
   return (
-    <div className="flex items-center justify-between mb-8">
-      {/* Your SVG Logo (replace with your actual SVG logo) */}
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        className="h-8 w-8 text-blue-500"
+    <div className="flex fixed top-0 w-full  items-center justify-between  bg-blue-600 p-4 ">
+      {/* Grouping Logo and Text */}
+      <div className="flex items-center">
+        {/* Your SVG Logo */}
+        <img
+          src="/logo.svg" // Replace with the correct path to your logo
+          alt="Logo"
+          className="h-16 w-18 mr-2" // Increased size to 24x24 and added margin-right
+        />
+
+        {/* Text: Smart Attendance System */}
+        <h1 className="text-md font-bold text-white">
+          Smart Attendance System
+        </h1>
+      </div>
+
+      {/* "Visit Our Site" Button */}
+      <a
+        href="https://hajirapp.com" // Replace with your actual landing page URL
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-100 hover:underline"
       >
-        {/* Your SVG Path goes here */}
-      </svg>
-
-      {/* Website Title or any other text */}
-      <h1 className="text-xl font-bold text-gray-700">Your Website Title</h1>
-
-      {/* Button for additional actions */}
-      <Link to="/" className="text-blue-500 hover:underline">
-        Back to Home
-      </Link>
+        Visit Our Site
+      </a>
     </div>
   );
 };

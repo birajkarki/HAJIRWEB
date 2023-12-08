@@ -20,6 +20,7 @@ import SubscriptionPlans from "./components/Plans/SubscriptionPlans";
 import Approver from "./components/Dashboard/Approver";
 import MissingAttendance from "./components/MissingAttendance/MissingAttendance";
 import UserProfile from "./components/Profile/UserProfile";
+import Footer from "./components/Footer/Footer";
 
 // eslint-disable-next-line react/prop-types
 const MainLayout = ({ children }) => {
@@ -63,6 +64,7 @@ const App = () => {
         <Route path="/missing-attendance" element={<MissingAttendance />} />
         <Route path="/profile" element={<UserProfile />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };
