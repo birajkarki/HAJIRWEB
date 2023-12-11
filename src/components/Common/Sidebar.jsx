@@ -11,7 +11,6 @@ import {
   BsPersonCheck,
   BsClock,
   BsPerson,
-  // BsFillPersonFill,
 } from "react-icons/bs";
 import logo from "/logo.svg";
 
@@ -120,8 +119,9 @@ const Sidebar = () => {
       </nav>
 
       {/* Sidebar Footer */}
-      <div className="p-4 mt-auto text-center cursor-pointer">
-        <p className="text-sm">LOgout </p>
+      <div className="p-4 mt-auto text-center text-red-600 cursor-pointer">
+        <p className="text-sm">Logout </p>
+        {/* Add any additional content for the footer */}
         <div className="mt-2"></div>
       </div>
     </aside>
